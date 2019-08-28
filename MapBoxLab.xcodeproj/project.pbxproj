@@ -12,7 +12,7 @@
 		5F3120AF23052CA00026D49B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F3120AD23052CA00026D49B /* Main.storyboard */; };
 		5F3120B123052CA60026D49B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F3120B023052CA60026D49B /* Assets.xcassets */; };
 		5F3120B423052CA60026D49B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F3120B223052CA60026D49B /* LaunchScreen.storyboard */; };
-		5F3120BC23052E050026D49B /* ParkableStreetsShader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3120BB23052E040026D49B /* ParkableStreetsShader.swift */; };
+		5F3120BC23052E050026D49B /* StreetsShader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3120BB23052E040026D49B /* StreetsShader.swift */; };
 		AAA12CB2E012DA5D4844F450 /* Pods_MapBoxLab.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0A9B3E23E4F08C55F6F0BB5 /* Pods_MapBoxLab.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,7 +25,7 @@
 		5F3120B023052CA60026D49B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F3120B323052CA60026D49B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F3120B523052CA60026D49B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5F3120BB23052E040026D49B /* ParkableStreetsShader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkableStreetsShader.swift; sourceTree = "<group>"; };
+		5F3120BB23052E040026D49B /* StreetsShader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreetsShader.swift; sourceTree = "<group>"; };
 		822A221BFB77601CE21A147C /* Pods-MapBoxLab.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapBoxLab.release.xcconfig"; path = "Target Support Files/Pods-MapBoxLab/Pods-MapBoxLab.release.xcconfig"; sourceTree = "<group>"; };
 		B0A9B3E23E4F08C55F6F0BB5 /* Pods_MapBoxLab.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MapBoxLab.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -65,7 +65,7 @@
 			children = (
 				5F3120A923052CA00026D49B /* AppDelegate.swift */,
 				5F3120AB23052CA00026D49B /* MapViewController.swift */,
-				5F3120BB23052E040026D49B /* ParkableStreetsShader.swift */,
+				5F3120BB23052E040026D49B /* StreetsShader.swift */,
 				5F3120AD23052CA00026D49B /* Main.storyboard */,
 				5F3120B023052CA60026D49B /* Assets.xcassets */,
 				5F3120B223052CA60026D49B /* LaunchScreen.storyboard */,
@@ -224,7 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F3120BC23052E050026D49B /* ParkableStreetsShader.swift in Sources */,
+				5F3120BC23052E050026D49B /* StreetsShader.swift in Sources */,
 				5F3120AC23052CA00026D49B /* MapViewController.swift in Sources */,
 				5F3120AA23052CA00026D49B /* AppDelegate.swift in Sources */,
 			);

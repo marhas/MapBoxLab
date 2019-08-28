@@ -4,7 +4,7 @@ import UIKit
 class MapViewController: UIViewController {
 
     private var mapView: MGLMapView!
-    private var streetsShader: ParkableStreetsShader?
+    private var streetsShader: StreetsShader?
     private let homeLocation = CLLocationCoordinate2D(latitude: 59.349153, longitude: 18.112922)
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,7 +46,7 @@ class MapViewController: UIViewController {
 
     @objc
     private func centerMap() {
-        mapView.setCenter(homeLocation, zoomLevel: 16, direction: 0, animated: true) {
+        mapView.setCenter(homeLocation, zoomLevel: 18, direction: 0, animated: true) {
             print("Map centered on \(self.homeLocation)")
         }
     }
@@ -65,27 +65,31 @@ class MapViewController: UIViewController {
 extension MapViewController: MGLMapViewDelegate {
 
     func mapView(_ mapView: MGLMapView, didFinishLoading style: MGLStyle) {
-        streetsShader = ParkableStreetsShader(mapView: mapView, style: style)
+        streetsShader = StreetsShader(mapView: mapView, style: style)
         print("Finished loading style")
-        mapView.setCenter(homeLocation, zoomLevel: 16, direction: 0, animated: true) {
-            self.streetsShader?.update()
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-                self.streetsShader?.update()
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-                    self.streetsShader?.update()
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-                        self.streetsShader?.update()
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-                            self.streetsShader?.update()
-                        }
-                    }
-                }
-            }
-        }
     }
 
     func mapViewDidFinishLoadingMap(_ mapView: MGLMapView) {
         print("Finished loading map")
+        //        DispatchQueue.main.asyncAfter(deadline: .now() + 2.1) {
+        mapView.setCenter(self.homeLocation, zoomLevel: 18, direction: 0, animated: true)
+        //            {
+        //                print("Map finished initial centering")
+        //                self.streetsShader?.update()
+        //                DispatchQueue.main.asyncAfter(deadline: .now() + 1.1) {
+        //                    self.streetsShader?.update()
+        //                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+        //                        self.streetsShader?.update()
+        //                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+        //                            self.streetsShader?.update()
+        //                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+        //                                self.streetsShader?.update()
+        //                            }
+        //                        }
+        //                    }
+        //                }
+        //            }
+        //        }
     }
 
     func mapView(_ mapView: MGLMapView, regionDidChangeAnimated animated: Bool) {

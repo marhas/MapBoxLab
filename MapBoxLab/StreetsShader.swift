@@ -2,7 +2,7 @@ import Foundation
 import CoreLocation
 import Mapbox
 
-class ParkableStreetsShader {
+class StreetsShader {
 
     let mapView: MGLMapView
     let roadLayers: Set<String> = [
