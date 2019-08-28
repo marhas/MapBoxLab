@@ -3,25 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		5F3120AA23052CA00026D49B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3120A923052CA00026D49B /* AppDelegate.swift */; };
-		5F3120AC23052CA00026D49B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3120AB23052CA00026D49B /* ViewController.swift */; };
+		5F3120AC23052CA00026D49B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3120AB23052CA00026D49B /* MapViewController.swift */; };
 		5F3120AF23052CA00026D49B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F3120AD23052CA00026D49B /* Main.storyboard */; };
 		5F3120B123052CA60026D49B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F3120B023052CA60026D49B /* Assets.xcassets */; };
 		5F3120B423052CA60026D49B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F3120B223052CA60026D49B /* LaunchScreen.storyboard */; };
+		5F3120BC23052E050026D49B /* ParkableStreetsShader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F3120BB23052E040026D49B /* ParkableStreetsShader.swift */; };
+		AAA12CB2E012DA5D4844F450 /* Pods_MapBoxLab.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0A9B3E23E4F08C55F6F0BB5 /* Pods_MapBoxLab.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		59D5A1B486CB48C2D0D89E7E /* Pods-MapBoxLab.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapBoxLab.debug.xcconfig"; path = "Target Support Files/Pods-MapBoxLab/Pods-MapBoxLab.debug.xcconfig"; sourceTree = "<group>"; };
 		5F3120A623052CA00026D49B /* MapBoxLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapBoxLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F3120A923052CA00026D49B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5F3120AB23052CA00026D49B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5F3120AB23052CA00026D49B /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		5F3120AE23052CA00026D49B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5F3120B023052CA60026D49B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F3120B323052CA60026D49B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F3120B523052CA60026D49B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F3120BB23052E040026D49B /* ParkableStreetsShader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkableStreetsShader.swift; sourceTree = "<group>"; };
+		822A221BFB77601CE21A147C /* Pods-MapBoxLab.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapBoxLab.release.xcconfig"; path = "Target Support Files/Pods-MapBoxLab/Pods-MapBoxLab.release.xcconfig"; sourceTree = "<group>"; };
+		B0A9B3E23E4F08C55F6F0BB5 /* Pods_MapBoxLab.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MapBoxLab.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAA12CB2E012DA5D4844F450 /* Pods_MapBoxLab.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				5F3120A823052CA00026D49B /* MapBoxLab */,
 				5F3120A723052CA00026D49B /* Products */,
+				702153B78DEE3904A22D5C80 /* Pods */,
+				EAFFCD292FC65C481F958374 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +64,31 @@
 			isa = PBXGroup;
 			children = (
 				5F3120A923052CA00026D49B /* AppDelegate.swift */,
-				5F3120AB23052CA00026D49B /* ViewController.swift */,
+				5F3120AB23052CA00026D49B /* MapViewController.swift */,
+				5F3120BB23052E040026D49B /* ParkableStreetsShader.swift */,
 				5F3120AD23052CA00026D49B /* Main.storyboard */,
 				5F3120B023052CA60026D49B /* Assets.xcassets */,
 				5F3120B223052CA60026D49B /* LaunchScreen.storyboard */,
 				5F3120B523052CA60026D49B /* Info.plist */,
 			);
 			path = MapBoxLab;
+			sourceTree = "<group>";
+		};
+		702153B78DEE3904A22D5C80 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				59D5A1B486CB48C2D0D89E7E /* Pods-MapBoxLab.debug.xcconfig */,
+				822A221BFB77601CE21A147C /* Pods-MapBoxLab.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EAFFCD292FC65C481F958374 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B0A9B3E23E4F08C55F6F0BB5 /* Pods_MapBoxLab.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5F3120B823052CA60026D49B /* Build configuration list for PBXNativeTarget "MapBoxLab" */;
 			buildPhases = (
+				431967E9AD70DF77AF212409 /* [CP] Check Pods Manifest.lock */,
 				5F3120A223052CA00026D49B /* Sources */,
 				5F3120A323052CA00026D49B /* Frameworks */,
 				5F3120A423052CA00026D49B /* Resources */,
+				2A540FAE2BFB62E8AD9C780A /* [CP] Embed Pods Frameworks */,
+				5F3120BD2305330E0026D49B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -130,12 +160,72 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2A540FAE2BFB62E8AD9C780A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MapBoxLab/Pods-MapBoxLab-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MapBoxLab/Pods-MapBoxLab-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MapBoxLab/Pods-MapBoxLab-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		431967E9AD70DF77AF212409 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MapBoxLab-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F3120BD2305330E0026D49B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Look for a global file named 'mapbox' or '.mapbox' within the home directory\ntoken_file=~/.mapbox\ntoken_file2=~/mapbox\ntoken=\"$(cat $token_file 2>/dev/null || cat $token_file2 2>/dev/null)\"\nif [ \"$token\" ]; then\nplutil -replace MGLMapboxAccessToken -string $token \"$TARGET_BUILD_DIR/$INFOPLIST_PATH\"\nelse\necho 'warning: Missing Mapbox access token'\nopen 'https://www.mapbox.com/account/access-tokens/'\necho \"warning: Get an access token from <https://www.mapbox.com/account/access-tokens/>, then create a new file at $token_file or $token_file2 that contains the access token.\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5F3120A223052CA00026D49B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F3120AC23052CA00026D49B /* ViewController.swift in Sources */,
+				5F3120BC23052E050026D49B /* ParkableStreetsShader.swift in Sources */,
+				5F3120AC23052CA00026D49B /* MapViewController.swift in Sources */,
 				5F3120AA23052CA00026D49B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +370,7 @@
 		};
 		5F3120B923052CA60026D49B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59D5A1B486CB48C2D0D89E7E /* Pods-MapBoxLab.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +389,7 @@
 		};
 		5F3120BA23052CA60026D49B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 822A221BFB77601CE21A147C /* Pods-MapBoxLab.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
